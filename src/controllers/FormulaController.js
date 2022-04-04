@@ -6,8 +6,8 @@ class FormulaController {
     this.renderInterestpercentage = this.renderInterestpercentage.bind(this)
   }
 
-  calculateInterest (capital, years, interestpercentage) {
-    return (capital * years * (interestpercentage / 100))
+  calculateInterest (capital, years) {
+    return (capital * years * (this.interestpercentage / 100))
   }
 
   renderFormulaPage (req, res) {
