@@ -1,0 +1,30 @@
+<h1>Hola es prueba</h1>
+
+<form action="/formula" method="POST">
+
+  <input
+    name="interestpercentage"
+    type="number"
+    required="true"
+    placeholder="Porcentaje de interés"
+    value="{{interestpercentage}}"
+  >
+  <input
+    name="capital"
+    type="number"
+    required="true"
+    placeholder="capital"
+    value="{{capital}}"
+  >
+    <input
+    name="years"
+    type="number"
+    required="true"
+    placeholder="años"
+    value="{{years}}"
+  >
+  <button type="submit">Calcular interés</button>
+</form>
+{{#if interest}}
+<p>El interes simple producido es : {{interest}}</p>
+{{/if}}
